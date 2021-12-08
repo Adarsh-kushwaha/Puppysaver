@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    font-family: Roboto;
+    
+}
+
+.gameContainer{
+    background-image: url(bgi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+   
+}
+
+.puppy{
+    background-image: url(puppy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    width: 12%;
+    height: 25%;
+    left: 200px;
+    
+}
+
+.cactus{
+    background-image: url(cactus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 60vw;
+    bottom: 0;
+    width: 9%;
+    height: 25%;
+    
+    
+}
+
+.animatedPuppy{
+    animation: animepuppy 0.7s linear;
+}
+
+@keyframes animepuppy {
+    
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 400px;
+        
+    }
+    100%{
+        bottom: 0;
+        
+    }
+}
+
+.animatedCactus{
+    animation: animatedCactus 2s linear infinite;
+}
+
+@keyframes animatedCactus {
+    0%{
+        left: 100vw;
+    }
+
+    100%{
+        left:-10vw;
+    }
+}
+
+.gameOver{
+    visibility: hidden;
+    text-align: center;
+    font-size: 70px;
+    padding: 34px 0px;
+    margin: 0px 150px;
+    background-color: rgb(255, 60, 60);
+    color: white;
+    box-shadow: 1px 10px 5px 0px rgba(43, 43, 43, 0.26);
+    border-radius: 5px;
+   
+}
+
+
+
+.gameOver p{
+    font-size: 20px;
+    font-weight: 500;
+    color: greenyellow;
+}
+
+.gameOver h6{
+    font-size: 13px;
+    font-weight: 300;
+    text-align: right;
+    
+    padding-right: 24px;
+}
+
+#scoreCount{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+
+}
